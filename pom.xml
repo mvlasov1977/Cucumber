@@ -19,11 +19,10 @@
         <artifactId>cucumber-java</artifactId>
         <version>7.12.1</version>
     </dependency>
-    </dependencies>
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.10.0</version>
+        <version>4.11.0</version>
     </dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
@@ -58,4 +57,5 @@
         <version>1.9.3</version>
         <scope>test</scope>
     </dependency>
+    </dependencies>
 </project>
