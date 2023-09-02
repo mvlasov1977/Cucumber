@@ -11,6 +11,7 @@ public class LoginPage {
     private By usernameInputField = By.id("username");
     private By passwordInputField = By.id("password");
     private By loginButton = By.xpath("//*[@class=\"radius\"]");
+    private By alarmMessage = By.xpath("//*[@class=\"flash error\"]");
     private WebDriver driver;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -36,6 +37,14 @@ public class LoginPage {
     public WebDriver onClickButton(){
         driver.findElement(loginButton).click();
         return driver;
+    }
+
+    public String getAlarmMessage() {
+        return driver.findElement(alarmMessage).getText();
+    }
+
+    public void clearDriver(){
+        driver.quit();
     }
 
 }

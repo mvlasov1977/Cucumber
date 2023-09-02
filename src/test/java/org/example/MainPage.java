@@ -22,4 +22,7 @@ public class MainPage {
     public boolean isPageSuccess(){
         return pageSuccess;
     }
+    public void clearDriver(){
+        driver.quit();
+    }
 }

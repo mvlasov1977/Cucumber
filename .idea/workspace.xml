@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e552d21b-8ee7-4d2c-9d9a-c55b4edbbbbf" name="Changes" comment="make some tests">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="e552d21b-8ee7-4d2c-9d9a-c55b4edbbbbf" name="Changes" comment="make first test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/definitions/LoginTestDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/LoginTestDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilites/WaitersUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/WaitersUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/scenarios/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/scenarios/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +42,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login test negative scenario like bad credentials">
+    <configuration name="Scenario: Login test negative scenario like bad credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/scenarios/login.feature" />
+      <option name="GLUE" value="definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber" />
+      <option name="NAME_FILTER" value="^Login test negative scenario like bad credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login test negative scenario like bad credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login test negative scenario like bad credentials" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Login test positive scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/scenarios/login.feature" />
@@ -69,6 +88,7 @@
       <module name="Cucumber" />
       <option name="NAME_FILTER" value="^Login test positive scenario$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login test positive scenario$&quot;" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: Login test positive scenario" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -81,8 +101,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Login test negative scenario like bad credentials" />
+      <item itemvalue="Cucumber Java.Scenario: Login test positive scenario" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Login test negative scenario like bad credentials" />
         <item itemvalue="Cucumber Java.Scenario: Login test positive scenario" />
       </list>
     </recent_temporary>
@@ -110,12 +135,20 @@
       <option name="project" value="LOCAL" />
       <updated>1693598021358</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="make first test">
+      <created>1693600756074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693600756074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made environment" />
     <MESSAGE value="make some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="make some tests" />
+    <MESSAGE value="make first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="make first test" />
   </component>
 </project>

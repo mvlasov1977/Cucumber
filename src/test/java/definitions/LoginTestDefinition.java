@@ -1,5 +1,9 @@
 package definitions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,16 +16,21 @@ public class LoginTestDefinition {
     private String url = "https://the-internet.herokuapp.com/login";
     private LoginPage myLoginPage ;
     private MainPage myMainPage;
+    private ChromeDriver driver;
+    @Before
+    public void initDriver(){
+        ChromeDriver driver = new ChromeDriver();
+        this.driver = driver;
+        driver.get(url);
+        driver.manage().deleteAllCookies();
+    }
     @Given("I open login page")
     public void openLoginPage(){
-        ChromeDriver chromeDriver = new ChromeDriver();
-        chromeDriver.get(url);
-        chromeDriver.manage().deleteAllCookies();
-        myLoginPage = new LoginPage(chromeDriver);
+        myLoginPage = new LoginPage(driver);
         //Assertions.assertTrue(myLoginPage.isPageSuccess());
         //throw new io.cucumber.java.PendingException();
     }
-    @When("I enter my {string} login password on the Login Page")
+    @When("I enter my {string} login on the Login Page")
     public void enterLogin(String myLogin){
         myLoginPage.enterUserName(myLogin);
         //throw new io.cucumber.java.PendingException();
@@ -34,15 +43,27 @@ public class LoginTestDefinition {
     }
     @When("I click on submit button on the Login Page")
     public void onButtonClick(){
-
-        myMainPage = new MainPage(myLoginPage.onClickButton());
+        myLoginPage.onClickButton();
         //throw new io.cucumber.java.PendingException();
     }
     @Then("The main page is displayed")
     public void showMainPage(){
+        myMainPage = new MainPage(driver);
         myMainPage.isPageSuccess();
         //throw new io.cucumber.java.PendingException();
         //Assertions.assertTrue(myMainPage.isPageSuccess());
+    }
+    @Then("I see alarm {string}")
+    public void checkAlarmMessage(String myMessage){
+        if (!myLoginPage.getAlarmMessage().contains(myMessage)){
+            throw new IllegalStateException("Wrong response ! Expected -> " + myMessage);
+        }
+        //System.out.println(myLoginPage.getAlarmMessage());
+       // System.out.println(myMessage);
+    }
+    @After
+    public void closeDriver(){
+        driver.close();
     }
 
 }
