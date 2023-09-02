@@ -1,17 +1,14 @@
 package definitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-//import org.junit.jupiter.api.Assertions;
 import org.example.LoginPage;
 import org.example.MainPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 public class LoginTestDefinition {
     private String url = "https://the-internet.herokuapp.com/login";
     private LoginPage myLoginPage ;
@@ -24,7 +21,7 @@ public class LoginTestDefinition {
         driver.get(url);
         driver.manage().deleteAllCookies();
     }
-    @Given("I open login page")
+    @Given("^I open login page$")
     public void openLoginPage(){
         myLoginPage = new LoginPage(driver);
         //Assertions.assertTrue(myLoginPage.isPageSuccess());
