@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e552d21b-8ee7-4d2c-9d9a-c55b4edbbbbf" name="Changes" comment="firs BDD test with &quot;Examples&quot; was applied">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e552d21b-8ee7-4d2c-9d9a-c55b4edbbbbf" name="Changes" comment="final commit">
       <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/LoginTestDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/LoginTestDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693643362117</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final commit">
+      <created>1694112942235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694112942236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +221,7 @@
     <MESSAGE value="make some tests" />
     <MESSAGE value="make first test" />
     <MESSAGE value="firs BDD test with &quot;Examples&quot; was applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="firs BDD test with &quot;Examples&quot; was applied" />
+    <MESSAGE value="final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
   </component>
 </project>
